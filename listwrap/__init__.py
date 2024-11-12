@@ -28,7 +28,7 @@ def align(
         indent: The number of spaces to indent the output.
     """
     if quote:
-        strings = [f'"{string}"' for string in strings]
+        strings = [f"{quote}{string}{quote}" for string in strings]
     fullsep = f"{sep}\n" if vertical else sep
     expression = fullsep.join(strings)
     if strings and trailsep:
