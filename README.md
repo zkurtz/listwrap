@@ -4,7 +4,7 @@ Formatting lists of strings.
 
 Use cases include subtasks of automatic config generation or any other highly structured context such as programmatically constructing human-readable SQL statements.
 
-We're [on pypi](https://pypi.org/project/listwrap/), so you can `pip install listwrap` or `poetry add listwrap` etc.
+We're [on pypi](https://pypi.org/project/listwrap/), so `pip install listwrap`.
 
 ## Examples
 
@@ -29,25 +29,10 @@ Several formatting other options are supported; see the `align` method docstring
 
 ## Development
 
-Install poetry:
+1. Install poetry: `curl -sSL https://install.python-poetry.org | python3 -`
+1. Install [pyenv and its virtualenv plugin](https://github.com/pyenv/pyenv-virtualenv).
+1. Create a dev ops virtual environment using [makenv](https://gist.github.com/zkurtz/eabd6fef97ee7ef3d3a45bf2cc45c6bf):
 ```
-curl -sSL https://install.python-poetry.org | python3 -
-```
-
-Install [pyenv and its virtualenv plugin](https://github.com/pyenv/pyenv-virtualenv). Then:
-```
-pyenv install 3.12.2
-pyenv global 3.12.2
-pyenv virtualenv 3.12.2 listwrap
-pyenv activate listwrap
-```
-
-Install this package and its dependencies in your virtual env:
-```
-poetry install --with dev
-```
-
-Set up git hooks:
-```
-pre-commit install
+PYTHON_VERSION=3.12.2
+makenv listwrap
 ```
