@@ -31,13 +31,12 @@ Several formatting other options are supported; see the `align` method docstring
 
 *Not* inside any virtual environment, do `pip install uv`. Then create and activate a virtual environment:
 ```
-uv venv --python 3.12.2
-source .venv/bin/activate
-uv sync
-```
-
-1. Create a dev ops virtual environment using [makenv](https://gist.github.com/zkurtz/eabd6fef97ee7ef3d3a45bf2cc45c6bf):
-```
-PYTHON_VERSION=3.12.2
-makenv listwrap
+function makenv {
+    deactivate || true
+    rm -r .venv
+    uv venv
+    source .venv/bin/activate
+    uv sync
+}
+makenv
 ```
