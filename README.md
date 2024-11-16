@@ -29,14 +29,9 @@ Several formatting other options are supported; see the `align` method docstring
 
 ## Development
 
-Do `pip install uv`. Then create and activate a virtual environment:
 ```
-function makenv {
-    deactivate || true
-    rm -r .venv
-    uv venv
-    source .venv/bin/activate
-    uv sync
-}
-makenv
+git clone git@github.com:zkurtz/listwrap.git
+pip install uv
+uv sync
+source .venv/bin/activate
 ```
