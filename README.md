@@ -29,7 +29,7 @@ Several formatting other options are supported; see the `align` method docstring
 
 ## Development
 
-*Not* inside any virtual environment, do `pip install uv`. Then create and activate a virtual environment:
+Do `pip install uv`. Then create and activate a virtual environment:
 ```
 function makenv {
     deactivate || true
