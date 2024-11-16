@@ -31,6 +31,7 @@ Several formatting other options are supported; see the `align` method docstring
 
 ```
 git clone git@github.com:zkurtz/listwrap.git
+cd listwrap
 pip install uv
 uv sync
 source .venv/bin/activate
