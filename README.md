@@ -4,7 +4,9 @@ Formatting lists of strings.
 
 Use cases include subtasks of automatic config generation or any other highly structured context such as programmatically constructing human-readable SQL statements.
 
-We're [on pypi](https://pypi.org/project/listwrap/), so `pip install listwrap`.
+Links:
+- [Documentation](https://zkurtz.github.io/listwrap/listwrap.html)
+- [We're on pypi](https://pypi.org/project/listwrap/) (so `pip install listwrap`)
 
 ## Examples
 
@@ -36,14 +38,4 @@ cd listwrap
 pip install uv
 uv sync
 source .venv/bin/activate
-```
-
-To regenerate the documentation for all objects included in `__all__` in `listwrap/__init__.py`:
-```
-cd docs
-make clean
-sphinx-apidoc -o . ../listwrap
-make html
-rm -r _sources _static
-mv _build/html/* .
 ```

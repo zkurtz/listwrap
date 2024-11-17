@@ -1,6 +1,6 @@
 [project]
 name = "listwrap"
-version = "0.0.2"
+version = "0.0.3"
 description = "Formatting lists of strings."
 authors = [{ name = "Zach Kurtz", email = "zkurtz@gmail.com" }]
 readme = "README.md"
