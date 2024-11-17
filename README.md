@@ -29,10 +29,21 @@ Several formatting other options are supported; see the `align` method docstring
 
 ## Development
 
+Create and activate a virtual env for dev ops:
 ```
 git clone git@github.com:zkurtz/listwrap.git
 cd listwrap
 pip install uv
 uv sync
 source .venv/bin/activate
+```
+
+To regenerate the documentation for all objects included in `__all__` in `listwrap/__init__.py`:
+```
+cd docs
+make clean
+sphinx-apidoc -o . ../listwrap
+make html
+rm -r _sources _static
+mv _build/html/* .
 ```

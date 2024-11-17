@@ -25,3 +25,5 @@ repos:
       language: system
       types: [python]
       args: ['check', '--fix', '--force-exclude']
+
+exclude: ^(docs/)
