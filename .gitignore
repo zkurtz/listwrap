@@ -17,3 +17,9 @@ build/
 
 # Dev ops
 dev.py
+.DS_Store
+
+# Ignore draft auto-generated documentation files
+docs/_build/
+docs/_source/
+docs/_autodoc/

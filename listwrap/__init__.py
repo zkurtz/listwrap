@@ -3,6 +3,7 @@
 import textwrap
 from importlib.metadata import version
 
+__all__ = ["align"]
 __version__ = version("listwrap")
 DOUBLE_QUOTE = '"'
 SPACE = " "
