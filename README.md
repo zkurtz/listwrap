@@ -38,4 +38,5 @@ cd listwrap
 pip install uv
 uv sync
 source .venv/bin/activate
+pre-commit install
 ```
